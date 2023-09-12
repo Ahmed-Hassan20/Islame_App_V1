@@ -9,10 +9,16 @@ class mytheme {
       primaryColor: primaryColor,
 
       appBarTheme:
-          AppBarTheme(backgroundColor: Colors.transparent, elevation: 0,centerTitle: true),
+          AppBarTheme(backgroundColor: Colors.transparent, elevation: 0,centerTitle: true,iconTheme: IconThemeData(color: black)),
       textTheme: TextTheme(
           titleLarge: TextStyle(
-              fontSize: 30, fontWeight: FontWeight.w700, color:black)),
+              fontSize: 30, fontWeight: FontWeight.w700, color:black),
+      titleMedium: TextStyle(
+          fontSize: 25, fontWeight: FontWeight.w600, color:black),
+        titleSmall: TextStyle(
+            fontSize: 25, fontWeight: FontWeight.w400, color:black),
+      ),
+
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       selectedItemColor: black,
         selectedIconTheme: IconThemeData(size: 30 )
